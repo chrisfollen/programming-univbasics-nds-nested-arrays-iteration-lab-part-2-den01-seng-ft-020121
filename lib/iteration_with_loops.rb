@@ -3,6 +3,7 @@ def find_min_in_nested_arrays(src)
   # Produce a new Array that contains the smallest number of each of the nested arrays
 
   day_index = 0 
+  min_temps = []
   while day_index < src.count do
     hour_index = 0 
     daily_min_temp = 1000
@@ -12,6 +13,7 @@ def find_min_in_nested_arrays(src)
       end
       hour_index += 1 
     end
+    min_temps[day_index] = daily_min_temp
     day_index += 1 
   end
 
