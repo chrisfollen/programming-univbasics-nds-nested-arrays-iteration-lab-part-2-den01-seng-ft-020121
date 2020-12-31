@@ -16,5 +16,5 @@ def find_min_in_nested_arrays(src)
     min_temps[day_index] = daily_min_temp
     day_index += 1 
   end
-
+  min_temps 
 end
